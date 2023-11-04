@@ -1,0 +1,262 @@
+body {
+    /* margen del elemento */
+    margin: 0;
+    /* "margen" hacia adentro */
+    padding: 0;
+    /*fuente de texto*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*  *********************************************  */
+/* NAVEGACION */
+
+header{
+    /* ancho */
+    width: 100%; 
+    /* alto */
+    height: 70px;
+}
+header nav{
+    /* Justificar a la derecha */
+
+    /* Nos habilita usar flex-end, flex-start */
+    display: flex;
+    justify-content: flex-end;
+    /* Centrado verticalmente */
+    padding-right:px;
+}
+
+header .nav-right-section{
+    width: 270px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+    font-size: 5px;
+    padding-top: 10px;
+}
+
+header a {
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+    font-size: 13px;
+    margin: 3px;
+}
+
+nav .nav-right-section a{
+color: rgba(0, 0, 0, 0.705);
+margin-right: 20px;
+/* margen  hacia la derecha*/
+}
+
+nav .nav-right-section .menu{
+    /*Agregar iconos*/
+    background-image:url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*que la imagen este contenida en el elemento mas grande*/
+    background-size: contain;
+    opacity:.8;
+    width: 22px;
+    height: 22px;
+    /*para que las imagenes no se repitan*/
+    background-repeat: no-repeat;
+    /**/
+    margin-left: 8px;
+ }
+/*imagen del usuario*/
+ nav .nav-right-section img{
+    /*redondear bordes*/
+    border-radius: 100%;
+    width: 33px;
+    height: 33px;
+    margin-left: 20px;
+ }
+
+/*  *********************************************  */
+/* MAIN */
+
+main{
+    /*agregar espacio entre el hedader y main*/
+    margin-top: 20px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    /*margen Vertical // Horizontal*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-logo img{
+    height: 90px;
+    padding-bottom: 30px;
+
+}
+
+main .main-input{
+    width:590px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-input-container{
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 590px;
+    
+}
+
+main .main-input-container:hover{
+box-shadow: 2px 2px 2px 2px rgba(75, 74, 74, 0.11) ;
+}
+
+main .main-input input{
+    height: 35px;
+    /*quitar el borde*/
+    border: none;
+    /*quitar el borde cuando esta activo el imput*/
+    outline: none;
+    width: 460px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    opacity: .7;
+
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    background-position: center;
+    padding-left:15px;
+    margin-right: 1%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 25px;
+    margin-left:10px ;
+}
+
+main .Buttons{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+main .Buttons .search{
+    border-radius: 50px;
+    border-color: transparent;
+    border-radius: 10%;
+    margin-right: 15px;
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    color: #333536;
+
+    
+}
+main .Buttons .doodles{
+    border-radius: 50px;
+    border-color: transparent;
+    border-radius: 10%;
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    color: #333536;
+    
+}
+
+/*  *********************************************  */
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height:auto;
+    position: fixed;
+    background-color: #bdb5b5;
+    color: #868994;
+    margin-top: 220px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+footer .above-left{
+    background-color: #f3f2f2;
+
+}
+
+footer .above-left .Mexico{
+    height: 30px;
+    margin: auto;
+    list-style: none;
+    padding-top: 12px;
+    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #70757a;
+    font-size: 16px;
+    background-color: #f3f2f2
+
+}
+
+footer .under{
+    background-color: #f3f2f2;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(75, 74, 74, 0.158);
+
+}
+
+footer  .under .secction-left{
+    width: 620px;
+    height: auto;
+    list-style: none;
+    background-color: #f3f2f2;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+
+footer .under .secction-left:hover{
+    text-decoration: underline;
+}
+
+footer .under .secction-right{
+    width: 620px;
+    height: auto;
+    list-style: none;
+    color: #70757a;
+    background-color: #f3f2f2;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 30px;
+    align-items: center;
+}
+footer .under .secction-right:hover{
+text-decoration: underline;
+}
+
+footer a{
+    color: #70757a;  
+    margin-left: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
